@@ -1,19 +1,24 @@
 extend layout
 block content
-    table
+    table(id="content_table", width="800")
         thead
             tr
+                th Photo
                 th Name
                 th Breed
                 th Age
                 th Location
+                th Favorite Food
         tbody
             - console.log(data)
             - each item in data
                 tr
+                    td
+                        img(src= "http://www.nebarisoftware.com/puppies/#{item.img_url}.jpg", width="150px")
                     td= item.name
                     td= item.breed
                     td= item.age
                     td= item.location
                     td= item.fav_food
+
 

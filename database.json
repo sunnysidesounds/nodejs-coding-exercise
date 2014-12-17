@@ -1,0 +1,50 @@
+[
+    {
+        "breed": "Pug",
+        "img_url": "pug",
+        "name": "Carl",
+        "age": "1 year, 3 months",
+        "location": "Seattle",
+        "fav_food": "Bacon"
+    },
+    {
+        "breed": "Alaskan Klee Kai",
+        "img_url": "alaskan_klee_kai",
+        "name": "Ghost",
+        "age": "9 months",
+        "location": "Shoreline",
+        "fav_food": "Steak"
+    },
+    {
+        "breed": "American Pit Bull Terrier",
+        "img_url": "american_pit_bull_terrier",
+        "name": "Diesel",
+        "age": "9 months",
+        "location": "Shoreline",
+        "fav_food": "Kibbles"
+    },
+    {
+        "breed": "German Spitz",
+        "img_url": "german_spitz",
+        "name": "Klaus",
+        "age": "1 year, 5 months",
+        "location": "Bellevue",
+        "fav_food": "Salmon"
+    },
+    {
+        "breed": "Siberian Husky",
+        "img_url": "siberian_husky",
+        "name": "Dubs",
+        "age": "1 year",
+        "location": "Bellevue",
+        "fav_food": "Bacon"
+    },
+    {
+        "breed": "Shiba Inu",
+        "img_url": "shiba_inu",
+        "name": "Sadie",
+        "age": "1 year",
+        "location": "Seattle",
+        "fav_food": "Bits"
+    }
+]
