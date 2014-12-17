@@ -95,10 +95,6 @@ td {
 a img {
   border: none;
 }
-/*
- * Store the main color and
- * background color as variables
- */
 body {
   font-family: 'Georgia';
   background-color: #faf9f0;
@@ -123,7 +119,7 @@ header {
   border-bottom: 1px solid rgba(87,175,70,0.8);
 }
 .container {
-  width: 800px;
+  width: 500px;
   margin: 50px auto;
   overflow: hidden;
 }

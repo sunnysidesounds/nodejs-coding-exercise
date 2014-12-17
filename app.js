@@ -11,6 +11,7 @@ var rawJson = require("./database.json")
 
 
 
+
 var app = express()
 function compile(str, path) {
     return stylus(str)
@@ -44,7 +45,13 @@ app.get('/get/all', function (req, res) {
 
 // get puppy by name
 app.get('/get/:name', function (req, res) {
-    res.json("fucker")
+
+    //console.log(req.param("name"));
+
+
+    res.render('detail', {
+        name: req.param("name")
+    })
 })
 
 
