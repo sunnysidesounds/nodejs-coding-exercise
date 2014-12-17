@@ -6,6 +6,7 @@ block content
                 th Photo
                 th Name
                 th Breed
+                th Details
         tbody
             //- console.log(data)
             - each item in data
@@ -13,8 +14,10 @@ block content
                     td
 
                         a(href="/get/#{item.name}")
-                            img(src= "http://www.nebarisoftware.com/puppies/#{item.img_url}.jpg", width="150px")
+                            img(src= "http://www.nebarisoftware.com/puppies/#{item.img_url}.jpg", width="150px", title="Click here to see details of dog")
                     td= item.name
                     td= item.breed
+                    td
+                        a(href="/get/#{item.name}") See Details
 
 

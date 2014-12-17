@@ -9,9 +9,6 @@ var express = require('express')
 
 var rawJson = require("./database.json")
 
-
-
-
 var app = express()
 function compile(str, path) {
     return stylus(str)
@@ -29,8 +26,6 @@ app.use(stylus.middleware(
 ))
 app.use(express.static(__dirname + '/public'))
 
-
-
 // home
 app.get('/', function (req, res) {
     res.render('index', {
@@ -45,14 +40,10 @@ app.get('/get/all', function (req, res) {
 
 // get puppy by name
 app.get('/get/:name', function (req, res) {
-
-    //console.log(req.param("name"));
-
-
     res.render('detail', {
-        name: req.param("name")
+        name: req.param("name"),
+        data: rawJson
     })
 })
-
 
 app.listen(3000);

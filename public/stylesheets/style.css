@@ -118,6 +118,13 @@ header {
   height: 25px;
   border-bottom: 1px solid rgba(87,175,70,0.8);
 }
+#detail_name {
+  font-size: 30px;
+}
+.details {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
 .container {
   width: 500px;
   margin: 50px auto;
