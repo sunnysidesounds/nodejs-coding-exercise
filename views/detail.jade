@@ -2,19 +2,18 @@ extend layout
 block content
     P
         a(href="/") back to home
-    - each item in data
-        if item.name == name
-            ul
-                li(id="detail_name" class="details")= item.name
-                li(class="details")
-                    img(src= "http://www.nebarisoftware.com/puppies/#{item.img_url}.jpg")
-                li(class="details") Breed:
-                    b  #{item.breed}
-                li(class="details") Age:
-                    b  #{item.age}
-                li(class="details") Location:
-                    b  #{item.location}
-                li(class="details") Favorite Food:
-                    b  #{item.fav_food}
+    ul
+        li(id="detail_name" class="details")= data.name
+        li(class="details")
+            img(src= "http://www.nebarisoftware.com/puppies/#{data.img_url}.jpg")
+        li(class="details") Breed:
+            b  #{data.breed}
+        li(class="details") Age:
+            b  #{data.age}
+        li(class="details") Location:
+            b  #{data.location}
+        li(class="details") Favorite Food:
+            b  #{data.fav_food}
     P
         a(href="/") back to home
+
