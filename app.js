@@ -38,10 +38,10 @@ app.get('/get/:name', function (req, res) {
                     name: req.param("name"),
                     data: rawJson[i]
                 })
-            else
-                //TODO: Instead of throwing a error, we should display a message in the UI
-                throw new Error(req.param("name") + " doesn't exist in database");
         }
+
+
+
     else
         throw new Error("No values in database");
 })
