@@ -33,7 +33,7 @@ app.get('/', function (req, res) {
 app.get('/get/:name', function (req, res) {
     if(rawJson.length != 0)
         for (var i=0; i<rawJson.length; i++){
-            if(req.param("name") == rawJson[i].name)
+            if(rawJson[i].name == req.param("name"))
                 res.render('detail', {
                     name: req.param("name"),
                     data: rawJson[i]
